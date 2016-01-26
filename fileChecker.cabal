@@ -2,7 +2,7 @@ name:                fileChecker
 version:             0.1.0.0
 synopsis:            Checks the MIME type of multiple files using libmagic.  
 description:         Please see README.md
-homepage:            http://github.com/githubuser/fileChecker#readme
+homepage:            http://github.com/flounders/fileChecker
 license:             BSD3
 license-file:        LICENSE
 author:              Steven Williams
