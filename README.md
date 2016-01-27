@@ -1,7 +1,5 @@
 # fileChecker
 
-## Description
-
 fileChecker is a utility to help identify the MIME type of multiple files at once.
 It can be used recursively or only on the immediate child files of the directory
 you are checking. The default is non recursive checking at this time.

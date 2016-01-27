@@ -2,6 +2,7 @@ module Main where
 
 import Control.Monad (filterM)
 import Data.List (sort)
+import Data.Maybe (fromJust, isJust)
 import Options.Applicative
 import Magic.Data
 import Magic.Init
@@ -38,9 +39,7 @@ absGetDirectoryContents :: FilePath -> IO [FilePath]
 absGetDirectoryContents path =
   do contents <- getDirectoryContents path
      let absContents = map (secureAbsNormPath path) $ filter (\x -> x /= "." && x /= "..") contents
-     return . map (\(Just x) -> x) $ filter (\x -> case x of
-                                                     Just _ -> True
-                                                     _      -> False) absContents
+     return . map fromJust $ filter isJust absContents
 
 fileMagicTest :: [FilePath] -> IO ()
 fileMagicTest files =
