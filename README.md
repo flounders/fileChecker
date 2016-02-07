@@ -6,6 +6,8 @@ you are checking. The default is non recursive checking at this time.
 
 ## Building
 
+Dependencies: stack libmagic
+
 To build fileChecker you will need to have stack installed. You can find out how
 to install stack on your platform of choice
 [here.](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md)
